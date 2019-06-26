@@ -5,7 +5,7 @@ import routes from "./server/routes";
 import cors from "cors";
 require('dotenv').config()
 
-const port = 8088;
+const port = process.env.PORT || 8088;
 const app = express(); // setup express application
 app.use(logger("dev")); // log requests to the console
 // Parse incoming requests data
