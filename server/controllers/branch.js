@@ -12,11 +12,11 @@ class Branches {
         branches: branchData
       });
     });
-  }
+  } 
 
   static fetchAll(req, res) {
-    const bank_name = req.params.bank_name;
-    const city = req.params.city;
+    const bank_name = req.query.bank_name;
+    const city = req.query.city;
     const limit = req.query.limit;
     const offset = req.query.offset;
     return BankBranch.findAll({

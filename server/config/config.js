@@ -1,6 +1,6 @@
 module.exports = {
   development: {
-    username: process.env.username,
+    username: "cheenilabs",
     password: null,
     database: "bank_details",
     host: "127.0.0.1",
